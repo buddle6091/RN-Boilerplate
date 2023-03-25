@@ -1,11 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
+//import styled from 'styled-components/native';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -71,15 +65,11 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text>
-            와씨 드디어 되었다... 미친.. ㅠㅠ
-          </Section>
+          <Section title="Step One">Edit</Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
@@ -95,6 +85,12 @@ function App(): JSX.Element {
     </SafeAreaView>
   );
 }
+
+/* const Head = styled.View`
+  flex: 5;
+  width: 80%;
+  background-color: black;
+`; */
 
 const styles = StyleSheet.create({
   sectionContainer: {
